@@ -2,20 +2,101 @@
  * @Author: Dheeraj Chaudhary 
  * @Date: 2018-04-08 22:51:56 
  * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
- * @Last Modified time: 2018-04-08 23:06:21
+ * @Last Modified time: 2018-04-09 11:48:48
  */
 
 * {
-  /* So 100% means 100% */
-  box-sizing: border-box;
+    /* So 100% means 100% */
+    box-sizing: border-box;
 }
+
 html,
 body {
-  /* Make the body to be as tall as browser window */
-  height: 100%;
-  background: white;
-  /* padding: 20px; */
+    /* Make the body to be as tall as browser window */
+    height: 100%;
+    background: white;
+    /* padding: 20px; */
 }
+
 .container-box {
-  align-content: center;
+    align-content: center;
+}
+
+table {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+thead th {
+    white-space: nowrap;
+    border-bottom: 1px solid #ccc;
+    color: #888;
+}
+
+th,
+td {
+    padding: 0.5em 1em;
+    text-align: right;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+tbody th,
+td {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.enhanced th,
+.enhanced td {
+    display: none;
+}
+
+.enhanced th.essential,
+.enhanced td.essential {
+    display: table-cell;
+}
+
+
+/* .table-menu-wrapper {
+  position: absolute;
+  top: -3em;
+  right: 0;
+}
+
+.table-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  width: 12em;
+} */
+
+.table-menu-hidden {
+    left: -999em;
+    right: auto;
+}
+
+.table-wrapper {
+    position: relative;
+    margin: 5em 5%;
+}
+
+@media screen and (min-width: 500px) {
+    .enhanced th.optional,
+    .enhanced td.optional {
+        display: table-cell;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .enhanced th,
+    .enhanced td {
+        display: table-cell;
+    }
 }

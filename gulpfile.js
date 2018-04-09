@@ -2,7 +2,7 @@
  * @Author: Dheeraj Chaudhary 
  * @Date: 2018-04-05 22:19:43 
  * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
- * @Last Modified time: 2018-04-08 22:58:14
+ * @Last Modified time: 2018-04-09 11:45:49
  */
 
 const gulp = require('gulp');
@@ -39,7 +39,9 @@ gulp.task('server', ['sass'], function() {
     gulp.watch(
         ['node_modules/bootstrap/scss/bootstrap.scss', '/src/scss/*.scss'], ['sass']
     );
-    gulp.watch(['src/*.html', 'src/css/*.css']).on('change', browserSync.reload);
+    gulp
+        .watch(['src/*.html', 'src/css/*.css', 'src/js/*.js'])
+        .on('change', browserSync.reload);
 });
 
 // Move fonts-folder to src
