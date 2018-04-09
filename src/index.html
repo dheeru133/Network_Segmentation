@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=abc, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Network Segmentation</title>
+</head>
+
+<body>
+    <!-- Nanbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark p-0">
+        <div class="container ml-2 bg-dark">
+            <a href="index.html" class="navbar-brand">
+                Network Segmentation
+            </a>
+            <!-- Toggle Collapse Navbar -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse Div for Toggler -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="index.html" class="nav-link active bg-primary">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="network1.html" class="nav-link active">Network1</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="network2.html" class="nav-link">Network2</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <!-- Dropdown menu on a data toggle -->
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fa fa-user-circle mr-1"></i>Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fa fa-gears mr-1"></i>Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fa fa-user-times">&nbsp;Logout</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="main-header" class="text-white py-0">
+        <div class="container bg-primary ml-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                        <i class="fa fa-gears"></i> Dashboard
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ACTIONS -->
+    <section id="action" class="py-2 mb-4">
+        <div class="container bg-light ml-2">
+            <div class="row justify-content-between">
+                <div class="col-md-3">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
+                        <i class="fa fa-plus">Add Network</i>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
+                        <i class="fa fa-plus">Add Category</i>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="btn btn-info btn-block" data-toggle="modal" data-target="#addUserModal">
+                        <i class="fa fa-plus">Compare Network</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TABLE   ############################################################################## -->
+    <section id="table">
+        <div class="container border ml-2">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6>Network Data</h6>
+                        </div>
+                        <div class="d-none d-lg-block">
+                            <table class="table table-striped table-sm">
+                                <thead class="thead-inverse">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Application</th>
+                                        <th>Environment</th>
+                                        <th>DEVGARNET01</th>
+                                        <th>IP</th>
+                                        <th>Dst.Server</th>
+                                        <th>HTTP</th>
+                                        <th>HTTPS</th>
+                                        <th>Debug</th>
+                                        <th>URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td scope="row">RM Time reporting</td>
+                                        <td scope="row">Test</td>
+                                        <td scope="row">162.94.23.111</td>
+                                        <td scope="row">162.94.23.110</td>
+                                        <td scope="row">jbossolive</td>
+                                        <td scope="row">8280</td>
+                                        <td scope="row">8643</td>
+                                        <td scope="row">8285</td>
+                                        <td scope="row">
+                                            <a href="details.html" class="btn btn-secondary">
+                                                <i class="fa fa-angle-double-right"></i>Redirect
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td scope="row">RM Time reporting</td>
+                                        <td scope="row">Test</td>
+                                        <td scope="row">162.94.23.111</td>
+                                        <td scope="row">162.94.23.110</td>
+                                        <td scope="row">jbossolive</td>
+                                        <td scope="row">8280</td>
+                                        <td scope="row">8643</td>
+                                        <td scope="row">8285</td>
+                                        <td scope="row">
+                                            <a href="details.html" class="btn btn-secondary">
+                                                <i class="fa fa-angle-double-right"></i>Redirect
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td scope="row">RM Time reporting</td>
+                                        <td scope="row">Test</td>
+                                        <td scope="row">162.94.23.111</td>
+                                        <td scope="row">162.94.23.110</td>
+                                        <td scope="row">jbossolive</td>
+                                        <td scope="row">8280</td>
+                                        <td scope="row">8643</td>
+                                        <td scope="row">8285</td>
+                                        <td scope="row">
+                                            <a href="details.html" class="btn btn-secondary">
+                                                <i class="fa fa-angle-double-right"></i>Redirect
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td scope="row">RM Time reporting</td>
+                                        <td scope="row">Test</td>
+                                        <td scope="row">162.94.23.111</td>
+                                        <td scope="row">162.94.23.110</td>
+                                        <td scope="row">jbossolive</td>
+                                        <td scope="row">8280</td>
+                                        <td scope="row">8643</td>
+                                        <td scope="row">8285</td>
+                                        <td scope="row">
+                                            <a href="details.html" class="btn btn-secondary">
+                                                <i class="fa fa-angle-double-right"></i>Redirect
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-3 text-white">
+                        <div class="card-header bg-primary">
+                            Network Comparison
+                        </div>
+                        <div class="card-body bg-info">
+                            <h6>Network Details</h6>
+                            <h2 class="display-6">
+                                <i class="fa fa-pencil"></i>
+                            </h2>
+                            <a href="network.html" class="btn btn-outline-light btn-sm">Submit</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3 text-white">
+                        <div class="card-header bg-success">
+                            Network Comparison
+                        </div>
+                        <div class="card-body bg-info">
+                            <h6>Categories</h6>
+                            <h2 class="display-6">
+                                <i class="fa fa-folder-open-o"></i>
+                            </h2>
+                            <a href="network.html" class="btn btn-outline-light btn-sm">Submit</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3 text-white">
+                        <div class="card-header bg-warning">
+                            Network Comparison
+                        </div>
+                        <div class="card-body bg-info">
+                            <h6>Network Details</h6>
+                            <h2 class="display-6">
+                                <i class="fa fa-pencil"></i>
+                            </h2>
+                            <a href="network.html" class="btn btn-outline-light btn-sm">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-white mt-5">
+        <div class="container bg-dark ml-2">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        <h6>Copyright &copy; Hallmark</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MODALS ############################################################################ -->
+    <!-- PostModals -->
+    <div class="modal" id="addPostModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal header -->
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Add Post</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span class="fa fa-close"></span>
+                    </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Category</label>
+                            <select name="" id="select1" class="form-control">
+                                <option value="">Web Dev</option>
+                                <option value="">Tech Gadget</option>
+                                <option value="">Business Gadget</option>
+                                <option value="">Health Gadget</option>
+                                <option value="">Welness Gadget</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="file">Upload File</label>
+                            <input type="file" class="form-control-file">
+                            <small class="form-text text-muted">Max size 3 mb</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="body">Body</label>
+                            <textarea type="textar" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" dat-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Modal -->
+    <div class="modal" id="addCategoryModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal header -->
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Add Category</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span class="fa fa-close"></span>
+                    </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Category</label>
+                            <select name="" id="select2" class="form-control">
+                                <option value="">Web Dev</option>
+                                <option value="">Tech Gadget</option>
+                                <option value="">Business Gadget</option>
+                                <option value="">Health Gadget</option>
+                                <option value="">Welness Gadget</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="file">Upload File</label>
+                            <input type="file" class="form-control-file">
+                            <small class="form-text text-muted">Max size 3 mb</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="body">Body</label>
+                            <textarea type="textar" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-success" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Modal -->
+    <div class="modal" id="addUserModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal header -->
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title">Add User</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span class="fa fa-close"></span>
+                    </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Confirm Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-info" dat-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
