@@ -2,11 +2,19 @@
  * @Author: Dheeraj Chaudhary 
  * @Date: 2018-04-06 16:02:09 
  * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
- * @Last Modified time: 2018-04-09 15:07:36
+ * @Last Modified time: 2018-04-10 09:37:50
  */
 
 // const jQuery = require('jquery');
 jQuery(document).ready(function($) {
+    // Cardousel Trigger
+    $('.carousel').carousel({
+        interval: 1000,
+        keyboard: true,
+        pause: 'hover',
+        wrap: true
+    });
+    //Carousel Trigger
     var container = $(
         '<div class="table-menu table-menu-hidden"><ul class="list-unstyled"/></div>'
     );
