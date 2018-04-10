@@ -13,10 +13,10 @@
 
 <body>
     <!-- Nanbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark p-0">
-        <div class="container ml-2 bg-dark">
-            <i class="fa fa-crown"></i>
-            <a href="index.html" class="navbar-brand">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+        <div class="container">
+            <img class="rounded-circle bg-info" style="height:60px; width:60px" src="images/network.jpg">
+            <a href="index.html" class="navbar-brand ml-1 btn btn-sm btn-outline-info ">
                 Network Segmentation
             </a>
             <!-- Toggle Collapse Navbar -->
@@ -25,83 +25,149 @@
             </button>
             <!-- Collapse Div for Toggler -->
             <div class="collapse navbar-collapse" id="navbarNav">
-
             </div>
         </div>
     </nav>
-
     <!-- Header -->
-    <header id="main-header" class="text-white py-0">
-        <div class="container bg-info ml-2">
+    <header id="main-header" class="py-2 bg-info text-white mb-4">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h4>
-                        <i class="fa fa-user"></i> Network Admin
+                        <i class="fa fa-users"></i> Network Admin
                     </h4>
                 </div>
             </div>
         </div>
     </header>
-    <!-- ACTIONS -->
-    <section id="action" class="py-2 mb-4">
-        <div class="container bg-light ml-2">
-            <div class="row justify-content-between">
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Login -->
-    <!-- TABLE   ############################################################################## -->
-    <section id="login">
-        <div class="container ml-2">
+    <!-- HOME SECTION -->
+    <header id="home-section">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6"></div>
-                <div class="card">
-                    <div class="card-header">
-                        <h6>Account Login</h6>
+                <div class="col-lg-8 ">
+                    <h3 class="display-6 text-info">
+                        Build Hallmark Network and gain revenue.
+                    </h3>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <a href="#" class="rounded-circle btn btn-sm btn-outline-primary"><i class="fa fa-check-circle"></i></a>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Network architecture is the design of a communication network. It is a framework for the specification of a network's physical components
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <form action="index.html">
-                            <div class="form-group">
-                                <label for="email">UserID</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-user"></i>
-                                    </span>
-                                    <input type="text" class="form-control">
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <a href="#" class="rounded-circle btn btn-sm btn-outline-primary"><i class="fa fa-check-circle"></i></a>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Network architecture is the design of a communication network. It is a framework for the specification of a network's physical components
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <a href="#" class="rounded-circle btn btn-sm btn-outline-primary"><i class="fa fa-check-circle"></i></a>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Network architecture is the design of a communication network. It is a framework for the specification of a network's physical components
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            <h6>Account Login</h6>
+                        </div>
+                        <div class="card-body">
+                            <form action="index.html">
+                                <div class="form-group">
+                                    <label for="email"><h6>UserID</h6></label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                        <input type="text" class="form-control" placeholder="UserID">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-key"></i>
-                                    </span>
-                                    <input type="password" class="form-control">
+                                <div class="form-group">
+                                    <label for="password"><h6>Password</h6></label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                                    <i class="fa fa-key"></i>
+                                                </span>
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
                                 </div>
-                            </div>
-                            <input type="submit" class="btn btn-primary btn-block" value="Login">
-                        </form>
+                                <input type="submit" class="btn btn-primary btn-block" value="Login">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </header>
     <!-- FOOTER -->
-    <footer id="main-footer" class="text-white mt-5 mb-0">
-        <div class="container bg-dark ml-2">
-            <div class="row">
-                <div class="col">
-                    <p class="lead text-center">
-                        <h6>Copyright &copy; Hallmark</h6>
-                    </p>
+    <footer id="main-footer" class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3 align-self-start pt-3">
+                    <h6 class="text-info">Copyright &copy; Hallmark</h6>
+                    <blockquote class="blockquote">
+                        <p>Firewall Internal Segmentation implementation within Hallmark.</p>
+                        <footer class="blockquote-footer">Network Segmentation Team <i class="font-italic">Hallmark</i>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6 pt-3">
+                    <div class=" media align-top">
+                        <img class="mr-3 align-self-start rounded-circle" style="height:100px;width:100px" src="images/network.jpg">
+                        <div class="media-body">
+                            <h5>Hallmark Network Segmentation</h5>
+                            <p>Network architecture is the design of a communication network. It is a framework for the specification of a network's physical components</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 align-self-start pt-3">
+                    <button class="btn btn-outline-info float-right" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                    <a href="http://facebook.com" class="btn btn-outline-primary border-primary btn-sm rounded-circle"><i class="fa fa-facebook"></i></a>
+                    <a href="http://twitter.com" class="btn btn-outline-info border-info btn-sm rounded-circle"><i class="fa fa-twitter"></i></a>
+                    <a href="http://instagram.com" class="btn btn-outline-danger border-danger btn-sm rounded-circle"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
+    <!-- MODALS ############################################################################ -->
+    <!-- PostModals -->
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="contactModalTitle">Contact Us</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
