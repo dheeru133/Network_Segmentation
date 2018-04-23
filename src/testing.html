@@ -7,16 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<script>
+    // function myLoad() {
+    //     var button = document.getElementById('myId');
+    //     // console.log(button);
+
+    //     document.getElementById('myId').addEventListener('click', clickMe);
+    // }
+
+
+    function cickMe(event) {
+        console.log(event);
+
+
+
+    }
+
+</script>
 
 <body>
-    <div style="border:1px solid;height:50px; margin-top: 10px; ">
-        Initial
-        <div style="border:1px solid red;  height:20px; position: static; top:0">
-            first
-        </div>
-    </div>
-    <div style="border:1px solid blue; margin-top: 10px">
-        second
+    <div>
+        <button id="myId" onclick="cickMe(this)"> click me</button>
     </div>
 </body>
 
